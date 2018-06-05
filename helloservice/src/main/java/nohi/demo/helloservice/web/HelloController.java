@@ -21,8 +21,9 @@ public class HelloController {
 
 	@GetMapping(value = "/hello")
 	public String index(){
+		log.info( "=============index==============" );
 		ServiceInstance instance =  client.getLocalServiceInstance();
-	    log.debug( "host:{},serviceId:{}",instance.getHost(),instance.getServiceId() );
+	    log.info( "host:{},serviceId:{}",instance.getHost(),instance.getServiceId() );
 		return "hello world : " + LocalDateTime.now();
 	}
 

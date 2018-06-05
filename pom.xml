@@ -22,6 +22,9 @@
         <module>config-client</module>
         <module>rabbitmq-hello</module>
         <module>config-client-kafka</module>
+        <module>config-server-kafka</module>
+        <module>stream-hello</module>
+        <module>zipkin-server</module>
     </modules>
 
 
